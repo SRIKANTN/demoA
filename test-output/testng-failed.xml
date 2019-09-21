@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="chromeTest(failed)" parallel="tests">
+    <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Com_ActiTime_Test.ValidLoginLogoutTest">
+        <methods>
+          <include name="Postcondition"/>
+          <include name="ValidLoginLogout"/>
+          <include name="Precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Test.ValidLoginLogoutTest -->
+      <class name="Com_ActiTime_Test.InvalidLoginTest">
+        <methods>
+          <include name="Postcondition"/>
+          <include name="Precondition"/>
+          <include name="InvalidLogin"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Test.InvalidLoginTest -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="5" name="firefoxTest(failed)" parallel="tests">
+    <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Com_ActiTime_Test.ValidLoginLogoutTest">
+        <methods>
+          <include name="Postcondition"/>
+          <include name="ValidLoginLogout"/>
+          <include name="Precondition"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Test.ValidLoginLogoutTest -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+  <test thread-count="5" name="ieTest(failed)" parallel="tests">
+    <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browser" value="internet explorer"/>
+    <classes>
+      <class name="Com_ActiTime_Test.InvalidLoginTest">
+        <methods>
+          <include name="Postcondition"/>
+          <include name="Precondition"/>
+          <include name="InvalidLogin"/>
+        </methods>
+      </class> <!-- Com_ActiTime_Test.InvalidLoginTest -->
+    </classes>
+  </test> <!-- ieTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

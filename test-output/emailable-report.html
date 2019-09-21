@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">chromeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">110,105</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">firefoxTest</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">127,877</td><td></td><td></td></tr>
+<tr><td><a href="#t2">ieTest</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">204,571</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num attn">4</th><th class="num">442,553</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Com_ActiTime_Test.InvalidLoginTest</td><td><a href="#m0">InvalidLogin</a></td><td rowspan="1">1569042493909</td><td rowspan="1">586</td></tr><tr class="failedodd"><td rowspan="1">Com_ActiTime_Test.ValidLoginLogoutTest</td><td><a href="#m1">ValidLoginLogout</a></td><td rowspan="1">1569042458233</td><td rowspan="1">1075</td></tr><tr><th colspan="4">chromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Com_ActiTime_Test.VerifyVersionTest</td><td><a href="#m2">VerifyVersion</a></td><td rowspan="1">1569042522849</td><td rowspan="1">144</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">firefoxTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Com_ActiTime_Test.ValidLoginLogoutTest</td><td><a href="#m3">ValidLoginLogout</a></td><td rowspan="1">1569042448555</td><td rowspan="1">6098</td></tr><tr><th colspan="4">firefoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Com_ActiTime_Test.InvalidLoginTest</td><td><a href="#m4">InvalidLogin</a></td><td rowspan="1">1569042492728</td><td rowspan="1">11996</td></tr><tr class="passedodd"><td rowspan="1">Com_ActiTime_Test.VerifyVersionTest</td><td><a href="#m5">VerifyVersion</a></td><td rowspan="1">1569042539936</td><td rowspan="1">141</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">ieTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Com_ActiTime_Test.InvalidLoginTest</td><td><a href="#m6">InvalidLogin</a></td><td rowspan="1">1569042529486</td><td rowspan="1">82427</td></tr><tr><th colspan="4">ieTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Com_ActiTime_Test.ValidLoginLogoutTest</td><td><a href="#m7">ValidLoginLogout</a></td><td rowspan="1">1569042452747</td><td rowspan="1">72288</td></tr><tr class="passedodd"><td rowspan="1">Com_ActiTime_Test.VerifyVersionTest</td><td><a href="#m8">VerifyVersion</a></td><td rowspan="1">1569042617037</td><td rowspan="1">531</td></tr></tbody>
+</table>
+<h2>chromeTest</h2><h3 id="m0">Com_ActiTime_Test.InvalidLoginTest#InvalidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching actiTIME - Login<br/>user name admin<br/>password damager</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.JavascriptException: javascript error: circular reference
+  (Session info: chrome=77.0.3865.90)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-488FP15&apos;, ip: &apos;192.168.1.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.12 (220b19a666554..., userDataDir: C:\Users\APM-SY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63418}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: b32b4c996793fc59b1ce4bd80ef...}
+Session ID: b32b4c996793fc59b1ce4bd80ef9f49b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at Com_ActiTime_Page.actiTIMELoginPage.ClickOnLoginButton(actiTIMELoginPage.java:44)
+	at Com_ActiTime_Test.InvalidLoginTest.InvalidLogin(InvalidLoginTest.java:29)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Com_ActiTime_Test.ValidLoginLogoutTest#ValidLoginLogout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching actiTIME - Login</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.JavascriptException: javascript error: circular reference
+  (Session info: chrome=77.0.3865.90)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-488FP15&apos;, ip: &apos;192.168.1.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.12 (220b19a666554..., userDataDir: C:\Users\APM-SY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 66fb4354fbed223b693ac5d4f7f...}
+Session ID: 66fb4354fbed223b693ac5d4f7f93292
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at Com_ActiTime_Page.actiTIMELoginPage.ClickOnLoginButton(actiTIMELoginPage.java:44)
+	at Com_ActiTime_Test.ValidLoginLogoutTest.ValidLoginLogout(ValidLoginLogoutTest.java:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Com_ActiTime_Test.VerifyVersionTest#VerifyVersion</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching actiTIME - Login<br/>Element is present...<br/>version actiTIME 2019.3 Pro</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefoxTest</h2><h3 id="m3">Com_ActiTime_Test.ValidLoginLogoutTest#ValidLoginLogout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching actiTIME - Login<br/>Title is matching actiTIME - Enter Time-Track</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;a id=&quot;logoutLink&quot; class=&quot;logout&quot; href=&quot;/logout.do&quot;&gt; is not clickable at point (989,17) because another element &lt;div id=&quot;preInsertedTransformedMoireId&quot; class=&quot;transformedMoireClass&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-488FP15&apos;, ip: &apos;192.168.1.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 69.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190917135527, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 22228, moz:profile: C:\Users\APM-SYSTEM\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 385082fb-8307-481f-8e49-69f...}
+Session ID: 385082fb-8307-481f-8e49-69f146d42fda
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at Com_ActiTime_Page.actiTIMEEnterTimeTrackPage.clickOnLogoutButton(actiTIMEEnterTimeTrackPage.java:22)
+	at Com_ActiTime_Test.ValidLoginLogoutTest.ValidLoginLogout(ValidLoginLogoutTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Com_ActiTime_Test.InvalidLoginTest#InvalidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching actiTIME - Login<br/>user name admin<br/>password damager<br/>Element is present...<br/>===============================<br/>user name qsp<br/>password jsp<br/>Element is present...<br/>===============================<br/>user name 45<br/>password a<br/>Element is present...<br/>===============================<br/>user name a<br/>password @<br/>Element is present...<br/>===============================<br/>user name 1<br/>password 2<br/>Element is present...<br/>===============================</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Com_ActiTime_Test.VerifyVersionTest#VerifyVersion</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching actiTIME - Login<br/>Element is present...<br/>version actiTIME 2019.3 Pro</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ieTest</h2><h3 id="m6">Com_ActiTime_Test.InvalidLoginTest#InvalidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching actiTIME - Login<br/>user name admin<br/>password damager<br/>Elements is not present...</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at Com_ActiTime_Generic.BasePage.verifyElement(BasePage.java:42)
+	at Com_ActiTime_Page.actiTIMELoginPage.verifyErrorMSG(actiTIMELoginPage.java:48)
+	at Com_ActiTime_Test.InvalidLoginTest.InvalidLogin(InvalidLoginTest.java:30)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Com_ActiTime_Test.ValidLoginLogoutTest#ValidLoginLogout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching actiTIME - Login<br/>Title is matching actiTIME - Enter Time-Track<br/>Title is matching actiTIME - Login</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Com_ActiTime_Test.VerifyVersionTest#VerifyVersion</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching actiTIME - Login<br/>Element is present...<br/>version actiTIME 2019.3 Pro</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

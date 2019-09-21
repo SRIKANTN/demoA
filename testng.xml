@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="chromeTest">
+  <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+  <parameter name="browser" value="chrome"/>
+    <packages>
+      <package name="Com_ActiTime_Test"/>
+    </packages>
+  </test>
+   <test thread-count="5" name="firefoxTest">
+  <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+  <parameter name="browser" value="firefox"/>
+    <packages>
+      <package name="Com_ActiTime_Test"/>
+    </packages>
+  </test>
+   <test thread-count="5" name="ieTest">
+  <parameter name="nodeurl" value="http://localhost:4444/wd/hub"/>
+  <parameter name="browser" value="internet explorer"/>
+    <packages>
+      <package name="Com_ActiTime_Test"/>
+    </packages>
+  </test>
+</suite> 
